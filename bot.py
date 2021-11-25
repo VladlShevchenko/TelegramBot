@@ -8,6 +8,7 @@ bot = Bot(API_TOKEN)
 dp = Dispatcher(bot)
 
 
+
 @dp.message_handler(commands=['start'])
 async def start_handler(message: types.Message):
     await message.reply("Hello, it's a bot, which can send you <b>latest news</b>, <b>weather broadcats</b> and <b>exchange rates</b>!", parse_mode=types.ParseMode.HTML)
